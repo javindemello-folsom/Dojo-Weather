@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="" onclick="cityAlert()">Burbank</a></li>
+                    <li><a href="" onclick="cityAlert()">Chicago</a></li>
+                    <li><a href="" onclick="cityAlert()">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="city">
+                <h1>San Jose</h1>
+                <div class="tempset">
+                    <p>show temperature in</p>
+                    <select onchange="convertTemp(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="forcast">
+                <div class="day" id="today">
+                    <h2>Today</h2>
+                    <img src="assets/some_rain.png">
+                    <h3>some rain</h3>
+                    <div class="daytemps">
+                        <h3 class="dayhigh" id="temp1">24°</h3>
+                        <h3 class="daylow" id="temp2">18°</h3>
+                    </div>
+                </div>
+                <div class="day" id="tomorrow">
+                    <h2>Tomorrow</h2>
+                    <img src="assets/some_sun.png">
+                    <h3>some sun</h3>
+                    <div class="daytemps">
+                        <h3 class="dayhigh" id="temp3">27°</h3>
+                        <h3 class="daylow" id="temp4">19°</h3>
+                    </div>
+                </div>
+                <div class="day" id="friday">
+                    <h2>Friday</h2>
+                    <img src="assets/some_clouds.png">
+                    <h3>some clouds</h3>
+                    <div class="daytemps">
+                        <h3 class="dayhigh" id="temp5">21°</h3>
+                        <h3 class="daylow" id="temp6">16°</h3>
+                    </div>
+                </div>
+                <div class="day" id="saturday">
+                    <h2>Saturday</h2>
+                    <img src="assets/some_sun.png">
+                    <h3>some sun</h3>
+                    <div class="daytemps">
+                        <h3 class="dayhigh" id="temp7">26°</h3>
+                        <h3 class="daylow" id="temp8">21°</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cookies">
+                <img src="assets/cookie.png" alt="cookies">
+                <div class="cookiestext">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads to provide social media features and to analyse our traffic. <a href="">Read More...</a></p>
+                </div>
+                <button type="button" onclick="hide()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
